@@ -1,7 +1,8 @@
 from src.model.configs.connection import DBConnectionHandler
 from src.model.entities.inscritos import Inscritos
+from .interfaces.subscribers_repository import SubscribersRepositoryInterface
 
-class SubscribersRepository:
+class SubscribersRepository (SubscribersRepositoryInterface):
 
     # cria uma função de inserção de novos eventos no db
     def insert(self, subs_info: dict) -> None:
