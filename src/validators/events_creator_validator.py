@@ -13,4 +13,4 @@ def events_creator_validator(request: any):
     response = body_validator.validate(request.json)
 
     if response == False:
-        print(body_validator.errors) # printa o erro que o validador pegou
+        raise Exception(body_validator.errors) # barra e mostra erro que o validador pegou
