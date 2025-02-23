@@ -1,7 +1,7 @@
-# Colocar a interface ajuda na criação de outras classes/métodos interagentes ao estabelecer um "padrão" de métodos que a classe de trabalho precisa
-from src.model.repositories.interfaces.subscribers_repository import SubscribersRepositoryInterface
 from src.http_types.http_request import httpRequest
 from src.http_types.http_response import httpResponse
+# Colocar a interface ajuda na criação de outras classes/métodos interagentes ao estabelecer um "padrão" de métodos que a classe de trabalho precisa
+from src.model.repositories.interfaces.subscribers_repository import SubscribersRepositoryInterface
 
 class SubscribersCreator:
     def __init__(self, subs_repo: SubscribersRepositoryInterface):
